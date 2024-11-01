@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+# Dondurma Sitesi
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bu proje, kullanıcıların dondurma ürünlerini tercihlerine göre seçip, sepetlerine ekleyebilecekleri bir alışveriş sitesidir. React, React Router DOM ve Redux Toolkit kullanılarak geliştirilmiş olup, ürün verileri JSON Server üzerinden API ile çekilmektedir. Kullanıcılar, ürünleri külah ya da kupa seçeneği ile tercih edebilir ve sepetlerinde miktar ayarlamaları yapabilir.
 
-## Available Scripts
+## İçindekiler
+- [Özellikler](#özellikler)
+- [Kullanılan Teknolojiler](#kullanılan-teknolojiler)
+- [Kurulum](#kurulum)
+- [Kullanım](#kullanım)
+- [Projede Kullanılan Komutlar](#projede-kullanılan-komutlar)
+- [Ekran Görüntüsü](#ekran-görüntüsü)
+- [Katkıda Bulunma](#katkıda-bulunma)
+- [Lisans](#lisans)
 
-In the project directory, you can run:
+## Özellikler
 
-### `npm start`
+- **Ürün Seçimi ve Sepet İşlemleri:** Kullanıcılar, dondurma ürünlerini kupa veya külah seçenekleriyle tercih ederek sepete ekleyebilir.
+- **Sepet Yönetimi:** Sepet içerisindeki ürünlerin miktarını artırıp azaltabilir veya tamamen kaldırabilirler.
+- **Redux ile Durum Yönetimi:** Uygulamanın tüm durum yönetimi Redux Toolkit kullanılarak yapılmaktadır.
+- **Dinamik Yapıların Test Edilmesi:** Projenin dinamik yapıları için birim testler yazılmış ve başarıyla tamamlanmıştır.
+- **Kullanıcı Dostu Arayüz:** Basit ve kullanıcı dostu bir alışveriş deneyimi sunar.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Kullanılan Teknolojiler
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **React** - UI bileşenleri oluşturmak için
+- **Redux Toolkit** - Durum yönetimi
+- **React Router DOM** - Çoklu sayfa yönlendirmeleri
+- **JSON Server** - API ve veri kaynağı
+- **Jest** - Unit test framework’ü
+- **Testing Library** - React bileşenlerinin test edilmesi
 
-### `npm test`
+## Kurulum
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Projeyi çalıştırmak için aşağıdaki adımları izleyin:
 
-### `npm run build`
+1. Bu projeyi bilgisayarınıza klonlayın:
+   ```bash
+   git clone https://github.com/cengo14/react-icecream-app-project.git
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Proje dizinine gidin:
+   ```bash
+   cd react-icecream-app-project
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Gerekli bağımlılıkları yükleyin:
+   ```bash
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. JSON Server'ı başlatın:
+   ```bash
+   npm run server
+   ```
 
-### `npm run eject`
+5. Projeyi başlatın:
+   ```bash
+   npm start
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+`http://localhost:3000` adresine giderek uygulamayı görüntüleyebilirsiniz.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Kullanım
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **Ürün Seçimi:** Liste sayfasından dondurma ürünlerini külah ya da kupa seçeneği ile tercih edebilirsiniz.
+2. **Sepete Ekleme:** İlgili ürünü seçtikten sonra sepete ekleyebilirsiniz.
+3. **Sepet Yönetimi:** Sepet modalında ürün miktarını artırabilir, azaltabilir veya ürünü tamamen kaldırabilirsiniz.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Projede Kullanılan Komutlar
 
-## Learn More
+- **Proje Başlatma:** `npm start` - Projeyi yerel sunucuda başlatır.
+- **Test Çalıştırma:** `npm test` - Unit testleri çalıştırır.
+- **Build:** `npm run build` - Projeyi production için derler.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Ekran Görüntüsü
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Uygulamanın bir ekran görüntüsü aşağıda verilmiştir:
 
-### Code Splitting
+![Ice Cream Shop Preview](screenshot.gif)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Katkıda Bulunma
 
-### Analyzing the Bundle Size
+Bu projeye katkıda bulunmak isterseniz, lütfen bir **pull request** açın veya bir **issue** açarak önerilerinizi paylaşın.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Lisans
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Bu proje [MIT Lisansı](https://opensource.org/licenses/MIT) ile lisanslanmıştır.
